@@ -12,15 +12,10 @@ namespace Persistence.Contexts
 {
     public class WhatsappBroContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public WhatsappBroContext(DbContextOptions<WhatsappBroContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-36N2808;Database=WhatsappBro;Trusted_Connection=true;");
-            base.OnConfiguring(optionsBuilder);
-        }
-        //public WhatsappBroContext(DbContextOptions<WhatsappBroContext> options) : base(options)
-        //{
 
-        //}
+        }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

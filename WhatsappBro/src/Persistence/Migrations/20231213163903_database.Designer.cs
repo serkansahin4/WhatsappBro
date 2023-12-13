@@ -12,8 +12,8 @@ using Persistence.Contexts;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(WhatsappBroContext))]
-    [Migration("20231213163308_create_database")]
-    partial class create_database
+    [Migration("20231213163903_database")]
+    partial class database
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
