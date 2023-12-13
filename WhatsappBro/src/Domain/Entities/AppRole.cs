@@ -2,13 +2,15 @@
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class AppRole : IdentityRole<int>, IEntity
+    [Table("Roles")]
+    public class AppRole : IdentityRole<Guid>, IEntity
     {
         public DateTime CreatedDate { get; set; }
     }

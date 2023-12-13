@@ -1,0 +1,11 @@
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\bin\Debug\net6.0\Application.deps.json
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\bin\Debug\net6.0\Application.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\bin\Debug\net6.0\Application.pdb
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\Application.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\refint\Application.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\Application.pdb
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Application\obj\Debug\net6.0\ref\Application.dll
