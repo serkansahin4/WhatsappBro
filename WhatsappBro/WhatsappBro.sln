@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI", "src\Presentation\WebUI\WebUI.csproj", "{8CC9B266-9C69-444F-BBC4-0E84AE3C5E20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspWebUI", "src\Presentation\AspWebUI\AspWebUI.csproj", "{224A6F74-0BF8-48FE-B3FB-2F31E9E1C48B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,10 +37,6 @@ Global
 		{8CC9B266-9C69-444F-BBC4-0E84AE3C5E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CC9B266-9C69-444F-BBC4-0E84AE3C5E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CC9B266-9C69-444F-BBC4-0E84AE3C5E20}.Release|Any CPU.Build.0 = Release|Any CPU
-		{224A6F74-0BF8-48FE-B3FB-2F31E9E1C48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{224A6F74-0BF8-48FE-B3FB-2F31E9E1C48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{224A6F74-0BF8-48FE-B3FB-2F31E9E1C48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{224A6F74-0BF8-48FE-B3FB-2F31E9E1C48B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,7 +47,6 @@ Global
 		{F51AAD3D-D81B-454C-9A3C-B89FC4B7A2B9} = {FF671C53-778A-4630-B141-F2461F17B8BD}
 		{8229EA98-DF2D-4588-B04C-087EA5A7EA9B} = {FF671C53-778A-4630-B141-F2461F17B8BD}
 		{8CC9B266-9C69-444F-BBC4-0E84AE3C5E20} = {8229EA98-DF2D-4588-B04C-087EA5A7EA9B}
-		{224A6F74-0BF8-48FE-B3FB-2F31E9E1C48B} = {8229EA98-DF2D-4588-B04C-087EA5A7EA9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {334C83F5-22A8-469C-8503-D5F297D52019}

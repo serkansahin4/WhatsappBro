@@ -41,5 +41,10 @@ namespace WebUI.Controllers
             await _mediator.Send(signInCommand);
             return View();
         }
+
+        public IActionResult UnAuthorized()
+        {
+            return View();
+        }
     }
 }
