@@ -9,17 +9,18 @@
     </div>
     <div class="card-login__body">
         <form method="post" action="/member/register" class="container-fluid d-flex flex-column gap-3">
+            @Html.AntiForgeryToken()
             <div class="row">
                 <label for="username">Kullanıcı adı</label>
-                <input type="text" class="form-control mt-1" />
+                <input type="text" name="Username" class="form-control mt-1" />
             </div>
             <div class="row">
                 <label for="username">E-Posta Adresi</label>
-                <input type="text" class="form-control mt-1" />
+                <input type="text" name="Email" class="form-control mt-1" />
             </div>
             <div class="row">
                 <label for="username">Parola</label>
-                <input type="password" class="form-control mt-1" />
+                <input type="password" name="Password" class="form-control mt-1" />
             </div>
             <div class="row d-flex justify-content-left">
                 <button class="btn btn-primary">Kayıt Ol</button>

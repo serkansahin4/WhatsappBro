@@ -1,4 +1,5 @@
-﻿using Application.Features.UserFeatures;
+﻿using Application.Features.MemberFeatures;
+using Application.Features.UserFeatures;
 using AutoMapper;
 using Domain.Entities;
 using System;
@@ -13,6 +14,7 @@ namespace Application.Mappings.UserMaps
     {
         public UserMap()
         {
+            CreateMap<SignUpCommand, AppUser>();
             CreateMap<InsertUserCommand, AppUser>();
         }
     }

@@ -25,7 +25,10 @@ namespace Application.Features.MemberFeatures
         public async Task Handle(SignInCommand request, CancellationToken cancellationToken)
         {
             AppUser appUser = await _userManager.FindByNameAsync(request.UserName);
-
+            if (appUser is null)
+            {
+                throw new WrongPasswordOrUserNameException(ExceptionMessage.User.WrongPasswordOrUserName);
+            }
             SignInResult signResult = await _signInManager.PasswordSignInAsync(appUser, request.Password, false, false);
             if (!signResult.Succeeded)
             {
