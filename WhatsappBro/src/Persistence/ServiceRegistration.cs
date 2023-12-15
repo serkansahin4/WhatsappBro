@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,12 +18,13 @@ namespace Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection serviceDescriptors,IConfiguration configuration)
         {
-            serviceDescriptors.AddTransient<IUserFriendRepository, UserFriendRepository>();
-            serviceDescriptors.AddTransient<IUserMessageRepository, UserMessageRepository>();
-            serviceDescriptors.AddTransient<IUserDetailRepository, UserDetailRepository>();
+            serviceDescriptors.AddScoped<IUserFriendRepository, UserFriendRepository>();
+            serviceDescriptors.AddScoped<IUserMessageRepository, UserMessageRepository>();
+            serviceDescriptors.AddScoped<IUserDetailRepository, UserDetailRepository>();
 
-            serviceDescriptors.AddIdentityCore<AppUser>().AddEntityFrameworkStores<WhatsappBroContext>();
-            serviceDescriptors.AddDbContext<WhatsappBroContext>(x=>x.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            serviceDescriptors.AddDbContext<WhatsappBroContext>(x => x.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            serviceDescriptors.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<WhatsappBroContext>();
+            
         }
     }
 }

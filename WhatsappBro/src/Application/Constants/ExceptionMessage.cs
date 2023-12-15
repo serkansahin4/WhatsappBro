@@ -15,6 +15,7 @@ namespace Application.Constants
         public static class User
         {
             public const string AlreadyUserExist = "Böyle bir kullanıcı zaten mevcut.";
+            public const string WrongPasswordOrUserName = "Kullanıcı adı veya parola yanlış.";
         }
     }
 }

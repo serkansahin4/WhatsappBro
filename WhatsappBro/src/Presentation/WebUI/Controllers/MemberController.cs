@@ -1,4 +1,5 @@
-﻿using Application.Features.UserFeatures;
+﻿using Application.Features.MemberFeatures;
+using Application.Features.UserFeatures;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,19 @@ namespace WebUI.Controllers
         public async Task<IActionResult> Register([FromBody]InsertUserCommand insertUserCommand)
         {
             await _mediator.Send(insertUserCommand);
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login([FromBody]SignInCommand signInCommand)
+        {
             return View();
         }
     }

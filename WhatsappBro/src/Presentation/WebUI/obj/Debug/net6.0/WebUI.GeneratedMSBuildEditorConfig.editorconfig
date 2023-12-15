@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/12.10.2023 - Eğitimlerim (Serkan Şahin)/ICERİKLER/000 - Github Projects/WhatsappBro/src/Presentation/WebUI/Views/Member/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/12.10.2023 - Eğitimlerim (Serkan Şahin)/ICERİKLER/000 - Github Projects/WhatsappBro/src/Presentation/WebUI/Views/Member/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12.10.2023 - Eğitimlerim (Serkan Şahin)/ICERİKLER/000 - Github Projects/WhatsappBro/src/Presentation/WebUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
