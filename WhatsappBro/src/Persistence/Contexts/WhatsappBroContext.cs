@@ -14,7 +14,7 @@ namespace Persistence.Contexts
     {
         public WhatsappBroContext(DbContextOptions<WhatsappBroContext> options) : base(options)
         {
-
+            
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

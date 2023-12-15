@@ -21,6 +21,7 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody]InsertUserCommand insertUserCommand)
         {
             await _mediator.Send(insertUserCommand);
@@ -35,7 +36,7 @@ namespace WebUI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login([FromBody]SignInCommand signInCommand)
+        public IActionResult Login(SignInCommand signInCommand)
         {
             return View();
         }

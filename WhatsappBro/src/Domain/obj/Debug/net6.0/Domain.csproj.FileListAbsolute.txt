@@ -6,6 +6,7 @@ D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\Wh
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\Domain.sourcelink.json
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\Domain.dll
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\refint\Domain.dll
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Domain\obj\Debug\net6.0\Domain.pdb

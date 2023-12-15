@@ -11,6 +11,7 @@
           "Application": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
+          "Microsoft.VisualStudio.Web.CodeGeneration": "6.0.16",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
           "Persistence": "1.0.0"
         },

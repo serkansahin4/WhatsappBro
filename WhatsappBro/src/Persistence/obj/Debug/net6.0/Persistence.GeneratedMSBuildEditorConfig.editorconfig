@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Persistence
 build_property.ProjectDir = D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Persistence\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

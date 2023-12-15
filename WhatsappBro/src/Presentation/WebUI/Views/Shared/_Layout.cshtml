@@ -20,7 +20,7 @@
         }
 
         .background-image {
-            background-image: url('images/robotix.jpg');
+            background-image: url('/images/robotix.jpg');
             background-clip: border-box;
             background-position: center;
             background-repeat: no-repeat;
@@ -63,33 +63,7 @@
 <body>
     <header>
     </header>
-    <main class="  ">
-        <div class="card-login">
-            <div class="card-login__header">
-                <h2>WhatsappBro</h2>
-            </div>
-            <div class="card-login__body">
-                <form method="post" class="container-fluid d-flex flex-column gap-4">
-                    <div class="row">
-                        <label for="username">Kullanıcı adı</label>
-                        <input type="text" class="form-control" />
-                    </div>
-                    <div class="row">
-                        <label for="username">Parola</label>
-                        <input type="text" class="form-control" />
-                    </div>
-                    <div class="row d-flex justify-content-left">
-                        <button class="btn btn-primary">Giriş Yap</button>
-                    </div>
-                </form>
-                <div class="mt-3">
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-sm btn-link text-decoration-none">Parolamı Unuttum</button>
-                        <button class="btn btn-sm btn-link text-decoration-none">Kayıt Ol</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main>
         @RenderBody()
     </main>
     <div class="background-image"></div>
