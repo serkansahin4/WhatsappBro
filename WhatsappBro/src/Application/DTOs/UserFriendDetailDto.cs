@@ -10,5 +10,7 @@ namespace Application.DTOs
     {
         public Guid UserId { get; set; }
         public Guid FriendId { get; set; }
+        public UserDetailDto User { get; set; }
+        public UserDetailDto Friend { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Application.Features.MemberFeatures;
+﻿using Application.DTOs;
+using Application.Features.MemberFeatures;
 using Application.Features.UserFeatures;
 using AutoMapper;
 using Domain.Entities;
@@ -16,6 +17,7 @@ namespace Application.Mappings.UserMaps
         {
             CreateMap<SignUpCommand, AppUser>();
             CreateMap<InsertUserCommand, AppUser>();
+            CreateMap<UserDetailDto, AppUser>().ReverseMap();
         }
     }
 }

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "7Ob/zkW8hm/t45mnTwjTUkn78EWob9M38kSA/LYhv5Dz3sYM9ndARjptx+fF9+YfDgtY774LyPb6SVa1QinxRQ==",
+  "success": true,
+  "projectFilePath": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SOFT\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\SOFT\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\SOFT\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\SOFT\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

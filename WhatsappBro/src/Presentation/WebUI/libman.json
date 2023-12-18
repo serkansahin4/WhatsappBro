@@ -12,6 +12,10 @@
       "files": [
         "jquery.min.js"
       ]
+    },
+    {
+      "library": "microsoft-signalr@8.0.0",
+      "destination": "wwwroot/microsoft-signalr/"
     }
   ]
 }

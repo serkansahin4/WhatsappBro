@@ -22,6 +22,7 @@ namespace Persistence
             serviceDescriptors.AddScoped<IUserMessageRepository, UserMessageRepository>();
             serviceDescriptors.AddScoped<IUserDetailRepository, UserDetailRepository>();
 
+            serviceDescriptors.AddSignalR();
             serviceDescriptors.AddDbContext<WhatsappBroContext>(x => x.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             serviceDescriptors.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<WhatsappBroContext>();
             

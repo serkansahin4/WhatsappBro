@@ -22,7 +22,7 @@ namespace Application.Features.UserFriendFeatures.GetUserFriends
 
         public async Task<List<UserFriendDetailDto>> Handle(GetUserFriendsQuery request, CancellationToken cancellationToken)
         {
-            List<UserFriendDetailDto> userFriendDetails = _mapper.Map<List<UserFriendDetailDto>>(await _userFriendRepository.GetsAsync(x => x.UserId == request.UserId));
+            List<UserFriendDetailDto> userFriendDetails = _mapper.Map<List<UserFriendDetailDto>>(await _userFriendRepository.GetsAsync(x => x.UserId == request.UserId||x.FriendId==request.UserId));
             return userFriendDetails;
         }
     }

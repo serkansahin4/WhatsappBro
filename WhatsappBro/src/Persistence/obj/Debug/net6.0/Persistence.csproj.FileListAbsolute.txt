@@ -18,3 +18,5 @@ D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\Wh
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Persistence\obj\Debug\net6.0\Persistence.pdb
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Persistence\bin\Debug\net6.0\Core.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Persistence\bin\Debug\net6.0\Core.pdb

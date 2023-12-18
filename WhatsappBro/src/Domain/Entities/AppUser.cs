@@ -14,6 +14,8 @@ namespace Domain.Entities
     {
         public DateTime CreatedDate { get; set; }
         public UserDetail UserDetail { get; set; }
+        public string Path { get; set; }
+        public string ThumbnailPath { get; set; }
         public List<UserFriend> UserFriends { get; set; } //Arkadaşı Olanlar
         public List<UserMessage> UserMessages { get; set; }
     }

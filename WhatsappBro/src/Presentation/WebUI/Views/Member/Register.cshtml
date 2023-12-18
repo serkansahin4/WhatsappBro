@@ -8,7 +8,7 @@
         <h2>Kayıt Ol</h2>
     </div>
     <div class="card-login__body">
-        <form method="post" action="/member/register" class="container-fluid d-flex flex-column gap-3">
+        <form method="post" action="/member/register" class="container-fluid d-flex flex-column gap-3" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
             <div class="row">
                 <label for="username">Kullanıcı adı</label>
@@ -21,6 +21,10 @@
             <div class="row">
                 <label for="username">Parola</label>
                 <input type="password" name="Password" class="form-control mt-1" />
+            </div>
+            <div class="row">
+                <label for="image">Profil Resminiz</label>
+                <input type="file" name="Image" />
             </div>
             <div class="row d-flex justify-content-left">
                 <button class="btn btn-primary">Kayıt Ol</button>

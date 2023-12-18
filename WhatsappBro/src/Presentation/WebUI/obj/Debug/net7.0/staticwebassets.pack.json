@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\CUSTOM_JAVASCRIPT\\whatsappbrochat.js",
+      "PackagePath": "staticwebassets\\CUSTOM_JAVASCRIPT\\whatsappbrochat.js"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\CUSTOM_JAVASCRIPT\\whatsappbrotemplates.js",
+      "PackagePath": "staticwebassets\\CUSTOM_JAVASCRIPT\\whatsappbrotemplates.js"
+    },
+    {
       "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\bootstrap\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap-grid.css"
     },
@@ -549,12 +557,44 @@
       "PackagePath": "staticwebassets\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\images\\indir.png",
+      "PackagePath": "staticwebassets\\images\\indir.png"
+    },
+    {
       "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\images\\robotix.jpg",
       "PackagePath": "staticwebassets\\images\\robotix.jpg"
     },
     {
       "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\jquery\\jquery.min.js",
       "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\microsoft-signalr\\signalr.js",
+      "PackagePath": "staticwebassets\\microsoft-signalr\\signalr.js"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\microsoft-signalr\\signalr.min.js",
+      "PackagePath": "staticwebassets\\microsoft-signalr\\signalr.min.js"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\userprofiles\\path\\e17cf0fd-54bc-412c-9bb7-55497e53828b - Copy.jpg",
+      "PackagePath": "staticwebassets\\userprofiles\\path\\e17cf0fd-54bc-412c-9bb7-55497e53828b - Copy.jpg"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\userprofiles\\path\\e17cf0fd-54bc-412c-9bb7-55497e53828b.jpg",
+      "PackagePath": "staticwebassets\\userprofiles\\path\\e17cf0fd-54bc-412c-9bb7-55497e53828b.jpg"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\userprofiles\\path\\indir.png",
+      "PackagePath": "staticwebassets\\userprofiles\\path\\indir.png"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\userprofiles\\thumnailpath\\e17cf0fd-54bc-412c-9bb7-55497e53828b.jpg",
+      "PackagePath": "staticwebassets\\userprofiles\\thumnailpath\\e17cf0fd-54bc-412c-9bb7-55497e53828b.jpg"
+    },
+    {
+      "Id": "D:\\12.10.2023 - Eğitimlerim (Serkan Şahin)\\ICERİKLER\\000 - Github Projects\\WhatsappBro\\src\\Presentation\\WebUI\\wwwroot\\userprofiles\\thumnailpath\\indir.png",
+      "PackagePath": "staticwebassets\\userprofiles\\thumnailpath\\indir.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -266,3 +266,7 @@ D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\Wh
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\obj\Debug\net7.0\WebUI.pdb
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\obj\Debug\net7.0\WebUI.genruntimeconfig.cache
 D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\obj\Debug\net7.0\ref\WebUI.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\bin\Debug\net7.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\bin\Debug\net7.0\Core.dll
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\bin\Debug\net7.0\Core.pdb
+D:\12.10.2023 - Eğitimlerim (Serkan Şahin)\ICERİKLER\000 - Github Projects\WhatsappBro\src\Presentation\WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll

@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/reset.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <style>
+        .vertical-center {
+            top: 0px;
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .messages {
+            width: 350px;
+            height: 100%;
+            background-color: white;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            border-right: 1px solid grey;
+        }
+
+        .messages__header {
+        }
+
+        .search {
+            outline: none;
+            border-bottom: 1px solid grey;
+            border-radius: 0px;
+        }
+
+        .messages__body {
+            flex: 1;
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        .user-container {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid grey;
+            cursor: pointer;
+        }
+
+            .user-container:hover {
+                background-color: aliceblue;
+            }
+
+        .user-container__user-logo {
+            padding: 5px 10px;
+        }
+
+        .user-container__user-name {
+            padding: 5px;
+            display: flex;
+            align-content: space-between;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+
+        .messages__footer {
+            width: 100%;
+            padding: 5px;
+            position: absolute;
+            bottom: 0px;
+            border-top: 1px solid gray;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            box-sizing: content-box;
+            height: 30px;
+        }
+
+        .option__notification {
+            position: absolute;
+            top: 20px;
+            color: red;
+        }
+
+        .bracket {
+            border: 1px solid gray;
+            width: 0.5px;
+        }
+
+
+        .messages-explain {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .messages-explain__content {
+            border: 1px solid gray;
+            padding: 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+        }
+
+        .messages-explain__messagebox {
+            padding: 10px;
+            border: 1px solid gray;
+        }
+
+        .message-receiver__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+            .message-receiver__content p {
+                border-radius: 50px;
+                padding: 5px 15px 5px 10px;
+            }
+
+        .message-sender__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+            .message-sender__content p {
+                border-radius: 50px;
+                padding: 5px 15px 5px 10px;
+            }
+    </style>
+    <div class="vertical-center">
+        <div class="messages">
+            <div class="messages__header">
+                <input type="text" class="search form-control" placeholder="Aramak için dokununuz..." />
+            </div>
+            <div class="messages__body">
+            </div>
+            <div class="messages__footer">
+                <div class="option">
+                    <img src="~/images/indir.png" width="20px" />
+                    <small class="option__notification">5</small>
+                </div>
+                <div class="bracket"></div>
+                <div class="option">
+                    <img src="~/images/indir.png" width="20px" />
+                    <small class="option__notification">5</small>
+                </div>
+                <div class="bracket"></div>
+                <div class="option">
+                    <img src="~/images/indir.png" width="20px" />
+                    <small class="option__notification">5</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="messages-explain">
+            <div class="messages-explain__content">
+                <div class="message-receiver d-flex flex-column ">
+                    <div class="message-receiver__content">
+                        <img src="~/images/indir.png" width="25px" height="25px" />
+                        <p class="w-100 mb-0 bg-light">selamlar burası metin</p>
+                    </div>
+                    <small class="w-100 text-end">12:25</small>
+                </div>
+                <div class="message-sender d-flex flex-column ">
+                    <div class="message-sender__content">
+                        <span style="width:25px;height:25px"></span>
+                        <p class="w-100 mb-0 bg-light">selamlar burası metin</p>
+                    </div>
+                    <small class="w-100 text-end">12:25</small>
+                </div>
+            </div>
+            <div class="messages-explain__messagebox">
+                <form method="post" action="/api/chats" class="form-message-send d-flex justify-content-between gap-1">
+                    <div class="flex-1 w-100">
+                        <input type="text" class="form-control" name="Message" placeholder="Bir mesaj giriniz..." />
+                    </div>
+                    <div>
+                        <button class="btn-message-send btn btn-primary">Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/microsoft-signalr/signalr.js"></script>
+<script src="~/CUSTOM_JAVASCRIPT/whatsappbrotemplates.js"></script>
+<script src="~/CUSTOM_JAVASCRIPT/whatsappbrochat.js"></script>
+<script>
+    var dynamicReceiverUserId = '';
+    $(document).ready(() => {
+        
+        var connection = GetSignalRConnection();
+        connection.on("receiveMessage", (data) => {
+            AppendDynamicMessage(data.friendId, data.friendName, data.message, data.messageDateTime, data.friendProfilePhotoBase64Thumbnail);
+            CreateUserContainerClickEvents(data.friendId);
+            if (dynamicReceiverUserId == data.friendId) {
+                GetMessageContainerFromReceiverUser(data.message, data.messageDateTime, data.friendProfilePhotoBase64Thumbnail);
+            }
+            $(".messages-explain__content").animate({ scrollTop: $('.messages-explain__content')[0].scrollHeight }, 500);
+
+        });
+
+        GetStaticMessages()
+
+        $(".btn-message-send").on('click', function (e) {
+            e.preventDefault();
+            let message = $(".form-message-send [name=Message]").val()
+            $.ajax({
+                type: "POST",
+                url: "/api/Chats",
+                data: { receiverUserId: dynamicReceiverUserId, message: message },
+                success: function (result) {
+                    
+                    AppendDynamicMessage(result.friendId, result.friendName, result.message, result.messageDateTime, result.friendProfilePhotoBase64Thumbnail);
+                    
+                    CreateUserContainerClickEvents(result.friendId);
+                   
+                    GetMessageContainerFromUser(result.message, result.messageDateTime);
+                    $(".messages-explain__content").animate({ scrollTop: $('.messages-explain__content')[0].scrollHeight }, 500);
+
+                }
+            })
+        })
+    })
+
+    function GetSignalRConnection() {
+        var connection = new signalR.HubConnectionBuilder()
+            .withUrl("https://localhost:7227/chat")
+            .withAutomaticReconnect()
+            .build();
+
+        async function ConnectionOpenSignalR() {
+            try {
+                connection.start();
+            } catch (e) {
+                setTimeout(() => {
+                    ConnectionOpenSignalR();
+                }, 2000)
+            }
+        }
+
+        ConnectionOpenSignalR();
+
+        return connection;
+    }
+
+    function AppendDynamicMessage(userId, userName, message, time,image) {
+        console.log(userId, userName, message, time)
+
+        let messageByUser = $(`.messages__body>[id=${userId}]`)
+        messageByUser.remove();
+
+        let messageContainer = $(`.messages__body`);
+        let messageTemplate = GetNewMessageTemplate(userId, userName, message, time, image);
+        messageContainer.prepend(messageTemplate);
+    }
+
+    function GetStaticMessages() {
+        $.ajax({
+            type: "GET",
+            url: "/api/chats",
+            success: (data) => {
+                $.each(data, function (index, item) {
+                    var temp = GetNewMessageTemplate(item.friendId, item.friendName, item.message, item.messageDateTime, item.friendProfilePhotoBase64Thumbnail);
+                    $(".messages__body").append(temp);
+                    CreateUserContainerClickEvents(item.friendId);
+                })
+            }
+        })
+    }
+
+    function CreateUserContainerClickEvents(userId) {
+        $(`.user-container[id=${userId}]`).on("click", function (params) {
+            params.stopPropagation();
+            dynamicReceiverUserId = $(this).attr("id");
+
+            GetMessageContainer(userId);
+            $(".messages-explain__content").animate({ scrollTop: $('.messages-explain__content')[0].scrollHeight }, 500);
+        })
+    }
+
+    function GetNewMessageTemplate(userId, userName, message, time,image) {
+        return `<div id="${userId}" class="user-container">
+                                                                <div class="user-container__user-logo">
+                                                                        <img src="data:image/png;base64, ${image}" width="30px" height="30px" />
+                                                                </div>
+                                                                <div class="user-container__user-name">
+                                                                    <div class="d-flex flex-column">
+                                                                        <a href="#">${userName}</a>
+                                                                            <span style="width: 200px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">${message}</span>
+                                                                    </div>
+                                                                    <small>${time}</small>
+                                                                </div>
+                                                            </div>`;
+    }
+
+    function GetMessageContainer(friendId) {
+        $.ajax({
+            type: "GET",
+            url: "/api/Chats/" + friendId,
+            success: (data) => {
+                let containerTemplateResult = GetMessagesContainerTemplateHelper(data);
+                let container = $(".messages-explain__content");
+                container.html('');
+                container.append(containerTemplateResult);
+                $(".messages-explain__content").animate({ scrollTop: $('.messages-explain__content')[0].scrollHeight }, 500);
+
+            }
+        })
+    }
+    function GetMessageContainerFromUser(message, createdDate) {
+        $.ajax({
+            type: "GET",
+            url: "/api/Chats/",
+            success: (data) => {
+                let containerTemplateResult = GetSenderMessage(message, createdDate);
+                let container = $(".messages-explain__content");
+                container.append(containerTemplateResult);
+                $(".messages-explain__content").animate({ scrollTop: $('.messages-explain__content')[0].scrollHeight }, 500);
+
+            }
+        })
+    }
+
+    function GetMessageContainerFromReceiverUser(message, createdDate,image) {
+        let containerTemplateResult = GetReceiverMessage(message, createdDate, image);
+        let container = $(".messages-explain__content");
+        container.append(containerTemplateResult);
+        $(".messages-explain__content").animate({ scrollTop: $('.messages-explain__content')[0].scrollHeight }, 500);
+
+    }
+
+    function GetMessagesContainerTemplateHelper(data) {
+        let template = "";
+        $.each(data, function (index, item) {
+            if (item.receiverId == item.ownerId) {
+                template += GetReceiverMessage(item.message, item.createdDateTime, item.senderUser.thumbnailBase64)
+            } else {
+                template += GetSenderMessage(item.message, item.createdDateTime)
+            }
+        })
+        return template;
+    }
+
+
+    function GetSenderMessage(message, time) {
+        return `<div class="message-sender d-flex flex-column ">
+                        <div class="message-sender__content">
+                            <span style="width:25px;height:25px"></span>
+                            <p class="w-100 mb-0 bg-light">${message}</p>
+                        </div>
+                        <small class="w-100 text-end">${time}</small>
+                    </div>`;
+    }
+    function GetReceiverMessage(message, time,image) {
+        return `<div class="message-receiver d-flex flex-column ">
+                        <div class="message-receiver__content">
+                                <img src="data:image/png;base64, ${image}" width="25px" height="25px" />
+                            <p class="w-100 mb-0 bg-light">${message}</p>
+                        </div>
+                        <small class="w-100 text-end">${time}</small>
+                    </div>`;
+    }
+
+
+</script>
+<script>
+
+</script>
