@@ -9,7 +9,7 @@ namespace Application.Features.UserFriendFeatures.InsertUserFriend
 {
     public class InsertUserFriendCommand:IRequest
     {
-        public Guid UserId { get; set; }
+        public string UserName { get; set; }
         public Guid FriendId { get; set; }
     }
 }

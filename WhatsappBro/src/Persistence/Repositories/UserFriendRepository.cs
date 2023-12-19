@@ -18,9 +18,9 @@ namespace Persistence.Repositories
 
         }
 
-        public async Task<List<UserFriend>> GetUserFriends(Expression<Func<UserFriend, bool>> filters)
+        public async Task<List<UserFriend>> GetUserFriends(Expression<Func<UserFriend, bool>> filter=null)
         {
-            return await _entity.Where(filters).Include(x=>x.User).Include(x=>x.Friend).ToListAsync();
+            return filter==null?await _entity.Include(x=>x.User).Include(x=>x.Friend).ToListAsync():await _entity.Where(filter).Include(x=>x.User).Include(x=>x.Friend).ToListAsync();
         }
     }
 }

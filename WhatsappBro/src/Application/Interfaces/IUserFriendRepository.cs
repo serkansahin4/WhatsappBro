@@ -10,6 +10,6 @@ namespace Application.Interfaces
 {
     public interface IUserFriendRepository : IEntityRepositoryAsync<UserFriend>
     {
-        Task<List<UserFriend>> GetUserFriends(Expression<Func<UserFriend, bool>> filters);
+        Task<List<UserFriend>> GetUserFriends(Expression<Func<UserFriend, bool>> filter = null);
     }
 }

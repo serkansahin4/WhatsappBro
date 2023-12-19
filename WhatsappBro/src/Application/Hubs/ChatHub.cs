@@ -1,6 +1,5 @@
 ﻿using Application.DTOs;
 using Application.Features.UserFriendFeatures.GetUserFriendDetails;
-using Application.Features.UserFriendFeatures.GetUserFriends;
 using Application.Features.UserMessageFeatures;
 using Application.Features.UserMessageFeatures.GetUserMessageFeature;
 using Application.Interfaces;
