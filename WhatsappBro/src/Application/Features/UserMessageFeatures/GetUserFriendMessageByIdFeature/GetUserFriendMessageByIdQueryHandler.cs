@@ -36,17 +36,19 @@ namespace Application.Features.UserMessageFeatures.GetUserFriendMessageByIdFeatu
         {
             string connectedUserName = _contextAccessor.HttpContext.User.Identity.Name;
             Guid connectedUserId = _userManager.Users.SingleOrDefault(x => x.UserName == connectedUserName).Id;
-            
-            List<UserMessageDto> userMessages = 
+
+            List<UserMessageDto> userMessages =
                 _mapper.Map<List<UserMessageDto>>(
-                await _messageRepository.GetUserMessages(x => x.SenderId == Guid.Parse(request.FriendId) || x.ReceiverId == Guid.Parse(request.FriendId))
+                await _messageRepository.GetUserMessages(x =>
+                (x.SenderId == Guid.Parse(request.FriendId) && x.ReceiverId == connectedUserId) ||
+                (x.SenderId == connectedUserId && x.ReceiverId == Guid.Parse(request.FriendId)))
                 ).ConvertAll(x =>
                 {
                     x.SenderUser.ThumbnailBase64 = FileHelper.ConvertToBase64(Path.Combine(request.RootPath, x.SenderUser.ThumbnailPath));
                     x.ReceiverUser.ThumbnailBase64 = FileHelper.ConvertToBase64(Path.Combine(request.RootPath, x.ReceiverUser.ThumbnailPath));
                     return x;
                 }).ToList();
-            userMessages = userMessages.ConvertAll(x => { x.OwnerId = connectedUserId;return x; }).OrderBy(x=>x.CreatedDate).ToList();
+            userMessages = userMessages.ConvertAll(x => { x.OwnerId = connectedUserId; return x; }).OrderBy(x => x.CreatedDate).ToList();
             return userMessages;
         }
     }

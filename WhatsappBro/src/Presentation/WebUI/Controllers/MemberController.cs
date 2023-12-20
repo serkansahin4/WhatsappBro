@@ -41,7 +41,7 @@ namespace WebUI.Controllers
             insertUserCommand.Path = imageResponse.Path;
             insertUserCommand.ThumbnailPath=imageResponse.ThumbnailPath;
             await _mediator.Send(insertUserCommand);
-            return View();
+            return RedirectToAction("Login");
         }
 
         [HttpGet]
